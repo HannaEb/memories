@@ -67,6 +67,8 @@ main {
   font-size: 1.6rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar__link:hover {

@@ -12,6 +12,7 @@ for (const section of sections) {
   navbarLink.innerText = section.getAttribute("data-nav");
   navbarItem.setAttribute("class", "navbar__item");
   navbarLink.setAttribute("class", "navbar__link");
+  navbarLink.setAttribute("href", `#${section.id}`);
   navbarItem.appendChild(navbarLink);
   navbar.appendChild(navbarItem);
 }
