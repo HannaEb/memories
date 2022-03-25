@@ -63,25 +63,31 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+  width: 100%;
+}
+
+.navbar__item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.navbar__item:hover {
+  background-color: #33345c;
+  transition: ease 0.4s all;
 }
 
 .navbar__link {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   cursor: pointer;
   text-decoration: none;
   color: #fff;
   opacity: 1;
 }
 
-.navbar__link:hover {
-  background-color: #33345c;
-  transition: ease 0.4s all;
-}
-
-.navbar__link.active {
+.navbar__item.active {
   background-color: #33345c;
 }
 

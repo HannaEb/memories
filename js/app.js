@@ -21,6 +21,7 @@ for (const section of sections) {
   navbarItem.setAttribute("class", "navbar__item");
   navbarLink.setAttribute("class", "navbar__link");
   navbarLink.setAttribute("href", `#${section.id}`);
+  navbarItem.classList.add(`${section.id}`);
   navbarItem.appendChild(navbarLink);
   navbar.appendChild(navbarItem);
   scroll(navbarLink, section);
@@ -33,13 +34,15 @@ window.addEventListener("scroll", () => addActiveClass());
 const addActiveClass = () => {
   let scrollY = window.pageYOffset;
   for (const section of sections) {
+    const link = document.querySelector(`li.${section.id}`);
     const sectionHeight = section.offsetHeight;
     const sectionTop = section.offsetTop - 200;
-    sectionId = section.getAttribute("id");
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       section.classList.add("active");
+      link.classList.add("active");
     } else {
       section.classList.remove("active");
+      link.classList.remove("active");
     }
   }
 };
