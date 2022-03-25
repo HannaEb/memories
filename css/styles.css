@@ -26,6 +26,7 @@ body {
 h1 {
   font-family: "Merriweather", serif;
   font-size: 5rem;
+  margin-top: 4rem;
 }
 
 h2 {
@@ -50,6 +51,9 @@ main {
 .header {
   background-color: #000133;
   border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* Navigation styles */
