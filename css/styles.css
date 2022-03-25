@@ -24,25 +24,56 @@ body {
 /* Typography */
 
 h1 {
-  font-family: "Playfair";
+  font-family: "Merriweather", serif;
   font-size: 5rem;
 }
 
 h2 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   margin: 2rem 0;
   border-bottom: 1px solid #ff00ff;
 }
 
 p {
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
 }
 
 /* Layout styles */
 
 main {
   margin: 5rem 2rem;
+}
+
+/* Header styles */
+
+.header {
+  background-color: #000133;
+  border-bottom: 1px solid #fff;
+}
+
+/* Navigation styles */
+
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navbar__link {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.navbar__link:hover {
+  background-color: #ff00ff;
+
+  /* color: #000133; */
+  transition: ease 0.4s all;
 }
 
 /* Main styles */
