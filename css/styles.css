@@ -1,0 +1,26 @@
+img {
+  max-width: 900px;
+}
+
+/* Base  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #2a2a72;
+  background-image: linear-gradient(0deg, #04619f 0%, #000000 100%);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
