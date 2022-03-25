@@ -2,7 +2,7 @@ img {
   max-width: 900px;
 }
 
-/* Base  */
+/* Base styles */
 
 *,
 *::after,
@@ -18,9 +18,17 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #2a2a72;
-  background-image: linear-gradient(0deg, #04619f 0%, #000000 100%);
+  background-color: #000133;
+  background-image: linear-gradient(0deg, #04619f 0%, #000133 100%);
   color: #fff;
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+/* Footer styles */
+
+.footer {
+  background-color: #000133;
+  padding: 3rem;
+  text-align: center;
 }
