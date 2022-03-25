@@ -57,7 +57,7 @@ main {
 .navbar__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -65,17 +65,20 @@ main {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  opacity: 1;
 }
 
 .navbar__link:hover {
-  background-color: #ff00ff;
-
-  /* color: #000133; */
+  background-color: #33345c;
   transition: ease 0.4s all;
+}
+
+.navbar__link.active {
+  background-color: #33345c;
 }
 
 /* Main styles */
@@ -85,6 +88,15 @@ main {
 }
 
 /* Section styles */
+
+.section.active {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
 
 .section__container {
   padding: 2rem;
