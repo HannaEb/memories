@@ -4,6 +4,15 @@
 const navbar = document.getElementById("navbar__list");
 const sections = document.querySelectorAll("section");
 
+// Smooth scrolling
+
+const scroll = (link, section) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+};
+
 // Build dynamic navbar
 
 for (const section of sections) {
@@ -15,4 +24,5 @@ for (const section of sections) {
   navbarLink.setAttribute("href", `#${section.id}`);
   navbarItem.appendChild(navbarLink);
   navbar.appendChild(navbarItem);
+  scroll(navbarLink, section);
 }
