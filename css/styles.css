@@ -12,6 +12,12 @@ html {
   font-size: 56.25%;
 }
 
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 body {
   box-sizing: border-box;
   background-color: #000133;
@@ -36,6 +42,16 @@ h2 {
   border-bottom: 1px solid #ff00ff;
 }
 
+@media only screen and (min-width: 56.25em) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+}
+
 p {
   font-family: "Merriweather", serif;
 }
@@ -43,7 +59,27 @@ p {
 /* Layout styles */
 
 main {
-  margin: 5rem 2rem;
+  margin: 6rem 2rem;
+}
+
+/* Main styles */
+
+.hero {
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .hero {
+    padding-top: 6rem;
+    padding-left: 4rem;
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  .hero {
+    padding-top: 8rem;
+    padding-left: 6rem;
+  }
 }
 
 /* Header styles */
@@ -66,9 +102,22 @@ main {
   width: 100%;
 }
 
+@media only screen and (min-width: 37.5em) {
+  .navbar__list {
+    justify-content: flex-end;
+  }
+}
+
 .navbar__item {
   flex: 1 1 auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .navbar__item {
+    flex: 0;
+    padding: 0 2rem;
+  }
 }
 
 .navbar__item:hover {
@@ -87,14 +136,14 @@ main {
   opacity: 1;
 }
 
-.navbar__item.active {
-  background-color: #33345c;
+@media only screen and (min-width: 37.5em) {
+  .navbar__link {
+    padding: 2rem 0;
+  }
 }
 
-/* Main styles */
-
-.hero {
-  padding: 2rem;
+.navbar__item.active {
+  background-color: #33345c;
 }
 
 /* Section styles */
@@ -109,7 +158,32 @@ main {
 }
 
 .section__container {
-  padding: 2rem;
+  padding: 4rem 2rem 6rem 2rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .section__container {
+    max-width: 40em;
+    padding: 6rem 4rem 8rem 4rem;
+  }
+
+  .section:nth-of-type(even) .section__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  .section__container {
+    padding: 8rem 6rem 12rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .section__container {
+    max-width: 60em;
+  }
 }
 
 .section__container p {
