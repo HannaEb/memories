@@ -66,6 +66,7 @@ main {
 
 .hero {
   padding: 2rem;
+  display: flex;
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -90,6 +91,7 @@ main {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 /* Navigation styles */
