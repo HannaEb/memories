@@ -7,7 +7,7 @@ const init = () => {
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
 
   const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 100);
-  camera.position.z = 25;
+  camera.position.z = 20;
 
   const scene = new THREE.Scene();
 
@@ -28,8 +28,9 @@ const init = () => {
 
   function resize(renderer) {
     const canvas = renderer.domElement;
-    const width = canvas.clientWidth;
-    const height = canvas.clientHeight;
+    const pixelRatio = window.devicePixelRatio;
+    const width = (canvas.clientWidth * pixelRatio) | 0;
+    const height = (canvas.clientHeight * pixelRatio) | 0;
     const needResize = canvas.width !== width || canvas.height !== height;
     if (needResize) {
       renderer.setSize(width, height, false);
@@ -43,7 +44,7 @@ const init = () => {
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
       camera.updateProjectionMatrix();
     }
-    sphere.rotation.y += 0.005;
+    sphere.rotation.y += 0.003;
     renderer.render(scene, camera);
     requestAnimationFrame(render);
   };
