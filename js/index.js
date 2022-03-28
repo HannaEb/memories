@@ -20,13 +20,16 @@ const init = () => {
   const geometry = new THREE.SphereGeometry(10, 100, 100);
   const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
 
-  material.map = THREE.ImageUtils.loadTexture("images/world-map1.jpg");
+  material.map = THREE.ImageUtils.loadTexture("images/world-map.jpg");
 
   const sphere = new THREE.Mesh(geometry, material);
   sphere.rotation.x += 0.2;
   scene.add(sphere);
 
   const render = () => {
+    const canvas = renderer.domElement;
+    camera.aspect = canvas.clientWidth / canvas.clientHeight;
+    camera.updateProjectionMatrix();
     sphere.rotation.y += 0.005;
     renderer.render(scene, camera);
     requestAnimationFrame(render);
