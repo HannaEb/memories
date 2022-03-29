@@ -26,7 +26,7 @@ const init = () => {
   sphere.rotation.x += 0.2;
   scene.add(sphere);
 
-  function resize(renderer) {
+  const resize = (renderer) => {
     const canvas = renderer.domElement;
     const pixelRatio = window.devicePixelRatio;
     const width = (canvas.clientWidth * pixelRatio) | 0;
@@ -36,7 +36,7 @@ const init = () => {
       renderer.setSize(width, height, false);
     }
     return needResize;
-  }
+  };
 
   const render = () => {
     if (resize(renderer)) {
@@ -44,7 +44,7 @@ const init = () => {
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
       camera.updateProjectionMatrix();
     }
-    sphere.rotation.y += 0.003;
+    sphere.rotation.y += 0.004;
     renderer.render(scene, camera);
     requestAnimationFrame(render);
   };
