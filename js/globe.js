@@ -3,7 +3,7 @@ import * as THREE from "../vendor/three/build/three.module.js";
 // Create spinning globe
 
 const init = () => {
-  const canvas = document.querySelector("#canvas");
+  const canvas = document.querySelector("#hero__canvas");
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
 
   const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 100);

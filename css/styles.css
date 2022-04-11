@@ -29,13 +29,13 @@ body {
 
 /* Typography */
 
-h1 {
+.hero__heading {
   font-family: "Merriweather", serif;
   font-size: 5rem;
   margin-top: 4rem;
 }
 
-h2 {
+.section__heading {
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -43,16 +43,16 @@ h2 {
 }
 
 @media only screen and (min-width: 56.25em) {
-  h1 {
+  .hero__heading {
     font-size: 7rem;
   }
 
-  h2 {
+  .section__heading {
     font-size: 5rem;
   }
 }
 
-p {
+.section__text {
   font-family: "Merriweather", serif;
 }
 
@@ -72,7 +72,7 @@ main {
   width: 100%;
 }
 
-#canvas {
+#hero__canvas {
   width: 70vw;
   height: 100%;
   display: inline-block;
@@ -88,7 +88,7 @@ main {
     justify-content: space-between;
   }
 
-  #canvas {
+  #hero__canvas {
     width: 50vw;
   }
 }
@@ -210,7 +210,7 @@ main {
   margin-bottom: 2rem;
 }
 
-img {
+.section__image {
   width: 100%;
   border-radius: 0.3rem;
   filter: drop-shadow(0 0 3rem #000133);
