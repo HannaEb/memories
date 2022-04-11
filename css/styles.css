@@ -211,9 +211,13 @@ main {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 0.3rem;
   filter: drop-shadow(0 0 3rem #000133);
+}
+
+.lazy-image {
+  filter: blur(0.5rem);
 }
 
 /* Footer styles */
