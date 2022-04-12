@@ -4,7 +4,7 @@ import * as THREE from "../vendor/three/build/three.module.js";
 
 const init = () => {
   const canvas = document.querySelector("#hero__canvas");
-  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true }); // set alpha to true to make background transparent
 
   const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 100);
   camera.position.z = 20;
