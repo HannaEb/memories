@@ -50,16 +50,15 @@ const addActiveClass = () => {
 // Lazy loading images
 
 const imageTargets = document.querySelectorAll("img[data-src]");
-console.log(imageTargets);
 
-const loadImage = function (entries, observer) {
+const loadImage = (entries, observer) => {
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;
 
   entry.target.src = entry.target.dataset.src;
 
-  entry.target.addEventListener("load", function () {
+  entry.target.addEventListener("load", () => {
     entry.target.classList.remove("lazy-image");
   });
 
