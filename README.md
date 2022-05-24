@@ -4,7 +4,7 @@
 
 A simple one page website displaying holiday memories and featuring a dynamic navbar, active sections, smooth scrolling and lazy loading images, as well as a three.js spinning globe.
 
-![](images/screentshot.png)
+![](images/screenshot.png)
 
 ## Technologies
 
