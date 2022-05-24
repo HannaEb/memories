@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,15 +37,16 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- <link rel="icon" type="image/ico" href="images/favicon.ico" /> -->
 
-    <script defer type="module" src="./js/index.js"></script>
-    <script defer type="module" src="./js/globe.js"></script>
+    <script async type="module" src="./js/index.js"></script>
+    <script async type="module" src="./js/globe.js"></script>
     <script
+      async
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
+      async
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
@@ -56,11 +57,13 @@
         <ul class="navbar__list" id="navbar__list"></ul>
       </nav>
     </header>
+
     <main>
       <header class="hero">
         <h1 class="hero__heading">Memories</h1>
         <canvas id="hero__canvas"></canvas>
       </header>
+
       <section class="section" id="horefto" data-nav="Horefto">
         <div class="section__container">
           <div class="section__text-box">
@@ -82,6 +85,7 @@
           </div>
         </div>
       </section>
+
       <section class="section" id="portimao" data-nav="Portimao">
         <div class="section__container">
           <div class="section__text-box">
@@ -103,6 +107,7 @@
           </div>
         </div>
       </section>
+
       <section class="section" id="haslemere" data-nav="Haslemere">
         <div class="section__container">
           <div class="section__text-box">
@@ -124,6 +129,7 @@
           </div>
         </div>
       </section>
+
       <section class="section" id="palermo" data-nav="Palermo">
         <div class="section__container">
           <div class="section__text-box">
@@ -146,6 +152,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <p>&copy; by Hanna</p>
     </footer>
