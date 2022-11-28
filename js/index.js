@@ -5,12 +5,12 @@ const sections = document.querySelectorAll("section");
 
 // Smooth scrolling
 
-const scroll = (link, section) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    section.scrollIntoView({ behavior: "smooth" });
-  });
-};
+// const scroll = (link, section) => {
+//   link.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     section.scrollIntoView({ behavior: "smooth" });
+//   });
+// };
 
 // Build dynamic navbar
 
